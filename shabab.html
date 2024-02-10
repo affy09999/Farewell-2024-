@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farewell QR Code</title>
+  <!-- Include QR code library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+  <h2>Student Name: Shsbab Quamar</h2>
+  <h3>Status: Paid</h3>
+  
+  <!-- Placeholder for the QR code -->
+  <div id="qrcode"></div>
+
+  <script>
+    // Generate QR code
+    var qr = new QRious({
+      element: document.getElementById('qrcode'),
+      size: 200,
+      value: 'Shsbab Quamar - Paid'
+    });
+  </script>
+</body>
+</html>
